@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/core/models/product.model';
 import { AnalyticsService } from 'src/app/core/services/analytics/analytics.service';
-import { OrdersService } from 'src/app/core/services/orders/orders.service';
 
 @Component({
   selector: 'app-analytics',

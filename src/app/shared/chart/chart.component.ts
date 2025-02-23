@@ -7,10 +7,10 @@ import { ApexAxisChartSeries, ApexChart, ApexXAxis, ApexStroke, ApexDataLabels, 
   styleUrls: ['./chart.component.scss']
 })
 export class ChartComponent {
-  @Input() chartTitle: string = "Chart"; // Title input
-  @Input() chartType: "line" | "area" | "bar" = "line"; // Chart type input
-  @Input() series: ApexAxisChartSeries = []; // Data input
-  @Input() categories: string[] = []; // X-axis categories input
+  @Input() chartTitle: string = "Chart";
+  @Input() chartType: "line" | "area" | "bar" = "line"; 
+  @Input() series: ApexAxisChartSeries = []; 
+  @Input() categories: string[] = []; 
 
   chartOptions: any = {
     type: this.chartType,

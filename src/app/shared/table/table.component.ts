@@ -8,8 +8,8 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements AfterViewInit, OnChanges {
-  @Input() columns: string[] = []; // Column names
-  @Input() data: any[] = []; // Table data
+  @Input() columns: string[] = []; 
+  @Input() data: any[] = []; 
   @Input() actionEvent: boolean = false; 
   @Output() viewDetails = new EventEmitter<number>();
 
@@ -30,16 +30,16 @@ export class TableComponent implements AfterViewInit, OnChanges {
   }
 
   updateColumns() {
-    // Copy the provided columns
+    
     this.displayedColumns = [...this.columns];
 
-    // ✅ Ensure "actions" column is added only when `actionEvent` is true
+
     if (this.actionEvent && !this.displayedColumns.includes('actions')) {
       this.displayedColumns.push('actions');
     }
   }
 
   openPopup(id: number) {
-    this.viewDetails.emit(id); // Emit event when clicking the icon
+    this.viewDetails.emit(id); 
   }
 }

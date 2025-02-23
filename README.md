@@ -52,6 +52,20 @@ Make sure you have the following installed on your system:
 - **Responsive Sidebar Navigation**: Expands and collapses based on screen size.
 - **Analytics Dashboard**: Displays charts and reports for data analysis.
 - **Material UI Components**: Uses Angular Material and Tailwind for styling and functionality.
+- **Implemented Tests**:
+This update includes unit tests for the Orders Service, Sidebar, and Navbar components.
+
+### Orders Service
+
+✅ Fetch all products & handle API errors
+✅ Fetch product by ID & verify error handling
+✅ Ensure correct API request structure
+
+### Sidebar & Navbar
+
+✅ Verify components render correctly
+✅ Check sidebar toggle functionality
+✅ Ensure navbar navigation works
 
 ## Version Control
 

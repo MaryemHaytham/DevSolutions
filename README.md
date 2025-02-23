@@ -1,27 +1,84 @@
-# AdminDashboard
+# Admin Dashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
+## Overview
 
-## Development server
+This project is an Angular-based web application that provides analytics, orders, and user features. It includes a structured layout with a core service layer, shared components, and feature modules.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Folder Structure
 
-## Code scaffolding
+```
+src/
+  ├── app/
+      ├── core/        # Contains models and services
+      ├── features/    # Main application features (analytics, orders, etc.)
+      ├── layout/      # Navbar and sidebar components
+      ├── shared/      # Reusable UI components (charts, tables, cards)
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation & Setup
 
-## Build
+Follow these steps to set up and run the application locally:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
 
-## Running unit tests
+Make sure you have the following installed on your system:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Node.js (v16 or later)
+- Angular CLI (`npm install -g @angular/cli`)
+- Git (optional, for version control)
 
-## Running end-to-end tests
+### Steps to Run the Application
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone the repository:
+   ```sh
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Run the development server:
+   ```sh
+   ng serve
+   ```
+4. Open your browser and visit:
+   ```
+   http://localhost:4200
+   ```
 
-## Further help
+## Features Implemented
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Responsive Sidebar Navigation**: Expands and collapses based on screen size.
+- **Analytics Dashboard**: Displays charts and reports for data analysis.
+- **Material UI Components**: Uses Angular Material and Tailwind for styling and functionality.
+
+## Version Control
+
+To make `master` the default branch, run:
+
+```sh
+git checkout master
+git push origin master
+git branch -u origin/master
+```
+
+Then set it as the default branch in GitHub under "Settings > Branches".
+
+## Contribution Guidelines
+
+1. Create a new branch for each feature/fix:
+   ```sh
+   git checkout -b feature-name
+   ```
+2. Commit your changes:
+   ```sh
+   git commit -m "Add feature description"
+   ```
+3. Push to GitHub:
+   ```sh
+   git push origin feature-name
+   ```
+4. Open a pull request for review.
+
+

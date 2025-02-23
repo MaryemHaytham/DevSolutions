@@ -1,0 +1,14 @@
+<div class="bg-white p-4 rounded-lg shadow-md">
+    <h3 class="text-lg font-semibold text-gray-700">{{ chartTitle }}</h3>
+    <apx-chart
+      [series]="series"
+      [chart]="chartOptions"
+      [xaxis]="xaxis"
+      [stroke]="stroke"
+      [dataLabels]="dataLabels"
+      [yaxis]="yaxis"
+      [grid]="grid"
+      [tooltip]="tooltip"
+    ></apx-chart>
+  </div>
+  

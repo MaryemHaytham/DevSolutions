@@ -1,0 +1,23 @@
+<div class="min-h-screen bg-gray-900 text-white fixed transition-all duration-300"
+     [ngClass]="{ 'w-16': isCollapsed, 'w-64': !isCollapsed }">
+  
+  <button (click)="toggleSidebar()" class="p-4 text-white flex items-center gap-2 focus:outline-none">
+    <mat-icon *ngIf="isCollapsed">menu</mat-icon>
+    <span *ngIf="!isCollapsed" class="text-lg font-semibold">DevSolutions</span>
+  </button>
+
+  <ul class="mt-4 space-y-2">
+    <li class="flex items-center gap-4 px-4 py-2 cursor-pointer hover:bg-gray-700"
+        routerLink="/features/analytics" routerLinkActive="bg-gray-700">
+      <mat-icon>dashboard</mat-icon>
+      <span *ngIf="!isCollapsed">Analytics</span>
+    </li>
+  
+    <li class="flex items-center gap-4 px-4 py-2 cursor-pointer hover:bg-gray-700"
+        routerLink="/features/orders" routerLinkActive="bg-gray-700">
+      <mat-icon>shopping_cart</mat-icon>
+      <span *ngIf="!isCollapsed">Orders</span>
+    </li>
+  </ul>
+  
+</div>

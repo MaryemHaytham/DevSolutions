@@ -1,0 +1,12 @@
+<div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4 h-full">
+    <mat-icon class="text-blue-500 text-3xl">{{ icon }}</mat-icon>
+    <div>
+      <p class="text-gray-500 text-sm">{{ title }}</p>
+      <p class="text-xl font-semibold">{{ value }}</p>
+      <p *ngIf="percentage" class="text-sm"
+         [ngClass]="percentageType === 'positive' ? 'text-green-500' : 'text-red-500'">
+        {{ percentage }}
+      </p>
+    </div>
+  </div>
+  

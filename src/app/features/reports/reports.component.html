@@ -1,0 +1,8 @@
+<h2 class="text-xl font-semibold mb-4">Orders Report</h2>
+
+<app-table 
+  [columns]="orderColumns" 
+  [data]="orders" 
+  [actionEvent]="true"
+  (viewDetails)="viewOrderDetails($event)">
+</app-table>
